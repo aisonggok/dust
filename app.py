@@ -10,7 +10,7 @@ st.title("😷 서울시 구별 (초)미세먼지 시각화 대시보드")
 @st.cache_data
 def load_data():
     # 파일명은 실제 업로드한 파일명과 동일해야 합니다.
-    df = pd.read_csv("서울시 시간별 (초)미세먼지_2025년.csv")
+    df = pd.read_csv("dustdata.csv")
     
     # '일시' 컬럼을 날짜시간 데이터로 변환
     df['일시'] = pd.to_datetime(df['일시'])
